@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - Swapnil Jare</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script>
+    (function () {
+      emailjs.init("Y3G5blaMS1WvYkS8-"); // Replace with your actual User ID from EmailJS
+    })();
+  </script>
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container">
+      <nav class="navbar">
+        <h1 class="logo">Swapnil Jare</h1>
+       <ul class="nav-links">
+  <li><a href="index.html">Home</a></li>
+  <li class="dropdown">
+    <a href="about.html">About ▾</a>
+    <ul class="dropdown-menu">
+      <li><a href="about.html#skills">Skills</a></li>
+            
+            <li><a href="about.html#certificates">Certificates</a></li>
+            <li><a href="about.html#internship">Internship</a></li>
+            <li><a href="about.html#organizations">Organizations</a></li>
+            <li><a href="about.html#resume-block">Resume</a></li>
+    </ul>
+  </li>
+    <li class="dropdown">
+    <a href="projects.html">Projects ▾</a>
+    <ul class="dropdown-menu">
+      <li><a href="projects.html#EMS">Employee Management System</a></li>
+      <li><a href="projects.html#AMS">Airline Management System</a></li>
+      <li><a href="projects.html#Todo">TODO’s List</a></li>
+      <li><a href="projects.html#weather-app">Weather-App</a></li>
+      <li><a href="projects.html#snake-game">Snake-Bite-Game</a></li>
+      <li><a href="projects.html#portfolio">Personal Portfolio</a></li>
+    </ul>
+  </li>
+
+  <li><a href="contact.html">Contact</a></li>
+</ul>
+  <!-- <li><a href="projects.html">Projects</a></li>
+  <li><a href="contact.html">Contact</a></li>
+</ul> -->
+
+      </nav>
+    </div>
+  </header>
+
+  <!-- Contact Section -->
+   <div class="containero" >
+    <section class="content">
+
+    
+      <h2>Contact Me</h2>
+      <p><center>If you'd like to work together or have any questions, feel free to get in touch using the form below.</center></p>
+
+      <form id="contact-form">
+        <input type="text" name="from_name" placeholder="Your Name" required />
+        <input type="email" name="reply_to" placeholder="Your Email" required />
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="btn">Send Message</button>
+      </form>
+    
+    </section>
+</div>
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Swapnil Jare</p>
+  </footer>
+
+  <!-- EmailJS Handler -->
+  <script>
+    document.getElementById("contact-form").addEventListener("submit", function(e) {
+      e.preventDefault();
+
+      emailjs.sendForm("service_umzhbua", "template_umkcfqr", this)
+        .then(function() {
+          alert("Message sent successfully! We'll get back to you shortly.");
+          document.getElementById("contact-form").reset();
+        }, function(error) {
+          alert("Failed to send message: " + JSON.stringify(error));
+        });
+    });
+  </script>
+</body>
+</html>
