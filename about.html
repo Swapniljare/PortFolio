@@ -1,75 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>About Me - Swapnil Jare</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/png" href="favicon.png" />
   <script defer src="script.js"></script>
-  <meta name="description" content="Swapnil Jare - Java Developer portfolio featuring full stack projects, internships, and contact info.">
-  <meta name="keywords" content="Java, Full Stack Developer, Portfolio, Spring Boot, Web Developer, Swapnil Jare">
+  <meta name="description" content="Swapnil Jare - Java Developer portfolio featuring full stack projects, internships, and contact info." />
+  <meta name="keywords" content="Java, Full Stack Developer, Portfolio, Spring Boot, Web Developer, Swapnil Jare" />
 </head>
-<body>
-  <header>
-    <!-- <nav class="navbar container">
-      <h1 class="logo">Swapnil Jare</h1>
-      <ul class="nav-links">
-        <li><a href="index.html">Home</a></li>
-        <li class="dropdown">
-          <a href="about.html">About ▾</a>
-          <ul class="dropdown-menu">
-            <li><a href="about.html#skills">Skills</a></li>
-            <li><a href="about.html#certificates">Certificates</a></li>
-            <li><a href="about.html#internship">Internship</a></li>
-            <li><a href="about.html#organizations">Organizations</a></li>
-            <li><a href="about.html#resume">Resume</a></li>
-          </ul>
-        </li>
-        <li><a href="projects.html">Projects</a></li>
-        <li><a href="contact.html">Contact</a></li>
-      </ul>
-    </nav>
-  </header> -->
 
-  <div class="container">
+<body>
+  <!-- ===== HEADER ===== -->
+  <header>
+    <div class="nav-container">
       <nav class="navbar">
         <h1 class="logo">Swapnil Jare</h1>
-       <ul class="nav-links">
-  <li><a href="index.html">Home</a></li>
-  <li class="dropdown">
-    <a href="about.html">About ▾</a>
-    <ul class="dropdown-menu">
-            <li><a href="about.html#skills">Skills</a></li>
-            <li><a href="about.html#certificates">Certificates</a></li>
-            <li><a href="about.html#internship">Internship</a></li>
-            <li><a href="about.html#organizations">Organizations</a></li>
-            <li><a href="about.html#resume-block">Resume</a></li>
-    </ul>
-  </li>
-    <li class="dropdown">
-    <a href="projects.html">Projects ▾</a>
-    <ul class="dropdown-menu">
-      <li><a href="projects.html#EMS">Employee Management System</a></li>
-      <li><a href="projects.html#AMS">Airline Management System</a></li>
-      <li><a href="projects.html#Todo">TODO’s List</a></li>
-      <li><a href="projects.html#weather-app">Weather-App</a></li>
-      <li><a href="projects.html#snake-game">Snake-Bite-Game</a></li>
-      <li><a href="projects.html#portfolio">Personal Portfolio</a></li>
-    </ul>
-  </li>
-
-  <li><a href="contact.html">Contact</a></li>
-</ul>
-  <!-- <li><a href="projects.html">Projects</a></li>
-  <li><a href="contact.html">Contact</a></li>
-</ul> -->
-
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li class="dropdown">
+            <a href="about.html">About ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="about.html#skills">Skills</a></li>
+              <li><a href="about.html#certificates">Certificates</a></li>
+              <li><a href="about.html#internship">Internship</a></li>
+              <li><a href="about.html#organizations">Organizations</a></li>
+              <li><a href="about.html#resume-block">Resume</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="projects.html">Projects ▾</a>
+            <ul class="dropdown-menu">
+              <li><a href="projects.html#EMS">Employee Management System</a></li>
+              <li><a href="projects.html#AMS">Airline Management System</a></li>
+              <li><a href="projects.html#Todo">TODO’s List</a></li>
+              <li><a href="projects.html#weather-app">Weather App</a></li>
+              <li><a href="projects.html#snake-game">Snake Bite Game</a></li>
+              <li><a href="projects.html#portfolio">Personal Portfolio</a></li>
+            </ul>
+          </li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
       </nav>
     </div>
   </header>
 
-  <section class="content container fade-in">
-    <h2>About Me</h2>
+  <!-- ===== ABOUT SECTION ===== -->
+  <!-- <section class="content container fade-in"> -->
+     <div class="section-card">
+  <div class="section-title">About Me</div>
+    
     <div class="about-flex">
       <div class="about-image">
         <img src="images/profile.jpg" alt="Swapnil Jare">
@@ -78,16 +58,16 @@
         <p>Hello! I'm <strong>Swapnil Jare</strong>, a passionate Java Developer and web enthusiast with experience in creating robust and scalable applications.</p>
         <p>I specialize in Java, Spring Boot, SQL, and front-end technologies like HTML, CSS, and JavaScript. I love building full-stack applications that are fast, functional, and user-friendly.</p>
         <p>With a Bachelor's degree in Information Technology, I focus on solving real-world problems through efficient code and clean UI.</p>
-        
       </div>
     </div>
+     </div>
+  <!-- </section> -->
 
-     <div class="info-card">
-    <h3 id="skills" >💡 Skills</h3>
-    <div class="skills-grid">
-      
-
-      <p>                                       </p>
+  <!-- ===== SKILLS ===== -->
+  <!-- <section class="info-card container" id="skills"> -->
+   <div class="section-card" id="skills">
+  <div class="section-title">💡 Skills</div>
+  <div class="skills-container">
       <span class="skill-badge">Java</span>
       <span class="skill-badge">C#</span>
       <span class="skill-badge">SQL</span>
@@ -99,40 +79,54 @@
       <span class="skill-badge">Data Structures & Algorithms</span>
       <span class="skill-badge">Git</span>
     </div>
-  </div>
-    <!-- Certificates Section -->
-<div class="info-card" id="certificates">
-  <h3>🎓 Certificates</h3>
-  <ul class="info-list">
-    <li>Core Java – Jspiders, Thane</li>
-    <li>SQL – Jspiders, Thane</li>
-    <li>Web Technology – Jspiders, Thane</li>
-    <li>Frameworks – Jspiders, Thane</li>
-  </ul>
-  <a href="resume/Jspiders certificate.pdf" class="btn-view" download>📜 View Certificate</a>
-</div>
+    </div>
+  <!-- </section> -->
 
-<!-- Internship Section -->
-<div class="info-card" id="internship">
-  <h3>👨‍💻 Internship</h3>
-  <h4>Full Stack Web Development Intern – CODE CRAFT</h4>
-  <p class="duration"><strong>May 2025 – June 2025</strong></p>
-  <ul class="info-list">
-    <li>Completed a virtual internship focused on full-stack development.</li>
-    <li>Built responsive web apps using HTML, CSS, JavaScript, Java, and MySQL.</li>
-    <li>Received outstanding feedback for performance.</li>
-  </ul>
-  <div style="margin-top: 1rem;">
-    <a href="resume/Internship_Certificate.pdf" class="btn-view" download>📜 View Internship Certificate</a>
-    <a href="resume/LOR Certificate.pdf" class="btn-view" download>📝 View LOR</a>
-  </div>
-</div>
-
-  <div class="info-card">
-    <h3 id="organizations">🏢 Organizations</h3>
-    <div class="organizations-box">
-      
+  <!-- ===== CERTIFICATES ===== -->
+  <!-- <section class="info-card container" id="certificates"> -->
+    <div class="section-card" id="certificates">
+  <div class="section-title">📜 Certificates</div>
+  <div>
+  <ul class="certificate-list">
+      <li>Core Java – Jspiders, Thane</li>
+      <li>SQL – Jspiders, Thane</li>
+      <li>Web Technology – Jspiders, Thane</li>
+      <li>Frameworks – Jspiders, Thane</li>
+    </ul>
+    </div>
+     <br>
+    <a href="resume/Jspiders certificate.pdf" class="btn-view" download>📜 View Certificate</a>
+    </div>
     
+  <!-- </section> -->
+
+  <!-- ===== INTERNSHIP ===== -->
+  <!-- <section class="info-card container" id="internship"> -->
+    <div class="section-card" id="internship">
+  <div class="section-title">👨‍💻 Internship</div>  
+    <div>
+    <h4>Full Stack Web Development Intern – CODE CRAFT</h4>
+    <p class="duration"><strong>May 2025 – June 2025</strong></p>
+    <ul class="info-list">
+      <li>Completed a virtual internship focused on full-stack development.</li>
+      <li>Built responsive web apps using HTML, CSS, JavaScript, Java, and MySQL.</li>
+      <li>Received outstanding feedback for performance.</li>
+    </ul>
+    <br>
+    </div>
+    <!-- <div class="btn-group"> -->
+      <a href="resume/Internship_Certificate.pdf" class="btn-view" download>📜 View Internship Certificate</a>
+      <a href="resume/LOR Certificate.pdf" class="btn-view" download>📝 View LOR</a>
+    <!-- </div> -->
+    </div>
+  <!-- </section> -->
+
+  <!-- ===== ORGANIZATIONS ===== -->
+  <!-- <section class="info-card container" > -->
+<div class="section-card" id="organizations">
+<div class="section-title">🏢 Organizations</div>
+    
+    <!-- <div class="organizations-box"> -->
       <div class="org-entry">
         <h4>Asahi India Glass Ltd.</h4>
         <p><strong>May 2024 – Present</strong></p>
@@ -143,16 +137,20 @@
         <p><strong>May 2025 – June 2025</strong></p>
         <p>Internship details <a href="#internship">listed above</a>.</p>
       </div>
-      
     </div>
-    </div>
-    <div class="info-card">
-  <h3><center>📌 My Resume</center></h3>
-  <br>
-<center><a id="resume-block" href="resume/Swapnil_Resume.pdf" class="btn" download>📄 Download Resume</a></center>
-  </section>
-  </div>
+  <!-- </section> -->
 
+  <!-- ===== RESUME ===== -->
+  <!-- <section class="info-card container" >
+    <h3><center>📌 My Resume</center></h3> -->
+    <div class="section-card" id="resume-block">
+    <div class="section-title">📌 My Resume</div>
+    <br />
+    <center><a href="resume/Swapnil_Resume.pdf" class="btn" download>📄 Download Resume</a></center>
+  <!-- </section> -->
+   </div>
+  <br>
+  <!-- ===== FOOTER ===== -->
   <footer>
     <p>&copy; 2025 Swapnil Jare</p>
   </footer>
